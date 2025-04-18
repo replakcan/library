@@ -8,3 +8,10 @@ const Book = function (title, author, year) {
   this.author = author
   this.year = year
 }
+
+const addBookToLibrary = function (title, author, year) {
+  const book = new Book(title, author, year)
+
+  myLibrary.push(book)
+}
+
