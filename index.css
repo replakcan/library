@@ -1,0 +1,26 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  min-height: 100vh;
+}
+
+header {
+  grid-area: 1 / 2 / 2 / -1;
+  background-color: blue;
+}
+
+.sidebar {
+  grid-area: 1 / 1 / -1 / 2;
+  background-color: darkred;
+}
+
+main {
+  grid-area: 2 / 2 / -2 / -1;
+  background-color: blueviolet;
+}
+
+footer {
+  grid-area: -2 / 2 / -1 / -1;
+  background-color: gray;
+}
