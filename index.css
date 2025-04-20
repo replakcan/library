@@ -64,9 +64,16 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transition-duration: 1000ms;
 }
 
 dialog {
+  padding: 1.5rem;
+  position: relative;
+  width: 400px;
+  border: 1px solid darkred;
+  background-color: black;
+  color: darkkhaki;
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -91,7 +98,7 @@ dialog > button:hover {
 }
 
 ::backdrop {
-  background-image: linear-gradient(45deg, magenta, rebeccapurple, dodgerblue, green);
+  background-image: linear-gradient(45deg, black, red, black, red);
   opacity: 0.75;
 }
 
@@ -120,7 +127,11 @@ fieldset > button:hover {
 }
 
 input:valid {
-  border-color: green;
+  border-color: darkkhaki;
+}
+
+input {
+  background-color: darkred;
 }
 
 input:invalid {
