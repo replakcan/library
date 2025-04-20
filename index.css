@@ -65,3 +65,11 @@ fieldset button {
   margin: auto;
   padding: 0.4rem 1.2rem;
 }
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
