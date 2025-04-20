@@ -45,8 +45,6 @@ header > h1 {
   background-color: red;
   border: none;
   cursor: pointer;
-  grid-area: 1 / 1 / -1 / 2;
-  background-color: darkred;
 }
 
 main {
