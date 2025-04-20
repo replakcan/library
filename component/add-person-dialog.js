@@ -12,7 +12,7 @@ const legend = document.createElement('legend')
 
 const fieldset = createFieldset(formFields, dialog)
 
-legend.textContent = 'Book information you want to add'
+legend.textContent = 'I\'m waiting'
 fieldset.appendChild(legend)
 
 form.setAttribute('id', 'person-form')

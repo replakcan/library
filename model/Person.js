@@ -8,7 +8,7 @@ const Person = function (name, age, location) {
 }
 
 Person.prototype.toString = function () {
-  return `Person info:\nbook_id: ${this.id}\ntitle: ${this.name}\nauthor: ${this.age}\nyear: ${this.location}\n`
+  return `Person info:\person_id: ${this.id}\nname: ${this.name}\nage: ${this.age}\nlocation: ${this.location}\n`
 }
 
 export const createPersonAndAddToTheList = function (name, age, location, list) {

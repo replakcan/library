@@ -23,12 +23,12 @@ const createFieldset = function (fields, dialog) {
     fieldset.appendChild(div)
   }
 
-  const addBookButton = document.createElement('button')
-  addBookButton.setAttribute('type', 'submit')
-  addBookButton.setAttribute('form', 'person-form')
-  addBookButton.textContent = 'Confirm'
+  const addPersonButton = document.createElement('button')
+  addPersonButton.setAttribute('type', 'submit')
+  addPersonButton.setAttribute('form', 'person-form')
+  addPersonButton.textContent = 'Confirm'
 
-  addBookButton.addEventListener('click', () => {
+  addPersonButton.addEventListener('click', () => {
     let name = document.querySelector('#name').value
     let age = document.querySelector('#age').value
     let location = document.querySelector('#location').value
@@ -38,7 +38,7 @@ const createFieldset = function (fields, dialog) {
     }
   })
 
-  fieldset.appendChild(addBookButton)
+  fieldset.appendChild(addPersonButton)
 
   return fieldset
 }
