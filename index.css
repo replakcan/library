@@ -10,6 +10,9 @@ body {
   grid-template-rows: repeat(6, 1fr);
   min-height: 100vh;
 }
+body > * {
+  padding: 1rem;
+}
 
 header {
   grid-area: 1 / 2 / 2 / -1;
