@@ -28,6 +28,18 @@ header > h1 {
 }
 
 .sidebar {
+  padding: 0;
+  grid-area: 1 / 1 / -1 / 2;
+  background-color: black;
+  text-align: center;
+}
+
+.sidebar > button {
+  font-size: 2rem;
+  width: 100%;
+  background-color: red;
+  border: none;
+  cursor: pointer;
   grid-area: 1 / 1 / -1 / 2;
   background-color: darkred;
 }
