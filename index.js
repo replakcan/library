@@ -1,13 +1,13 @@
-const myLibrary = []
+import { dialog } from './component/add-book-dialog.js'
 
-const Book = function (title, author, year) {
-  if (!new.target) throw Error('You must use the new word')
+const main = document.querySelector('main')
+main.appendChild(dialog)
 
-  this.id = crypto.randomUUID()
-  this.title = title
-  this.author = author
-  this.year = year
-}
+const showButton = document.querySelector('.dialog-show-btn')
+
+showButton.addEventListener('click', () => {
+  dialog.showModal()
+})
 
 Book.prototype.toString = function () {
   return `Book info:\nbook_id: ${this.id}\ntitle: ${this.title}\nauthor: ${this.author}\nyear: ${this.year}\n`
