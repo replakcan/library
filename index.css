@@ -50,13 +50,9 @@ header > h1 {
 }
 
 main {
-  grid-area: 2 / 2 / -2 / -1;
-  background-color: blueviolet;
-}
-
-footer {
-  grid-area: -2 / 2 / -1 / -1;
-  background-color: gray;
+  grid-area: 2 / 2 / -1 / -1;
+  background-color: black;
+  padding: 0;
 }
 
 .book-card {
