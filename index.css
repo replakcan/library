@@ -137,3 +137,21 @@ input {
 input:invalid {
   border-color: red;
 }
+
+.person-card {
+  position: relative;
+}
+
+.remove-person-button {
+  background-color: red;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 2rem;
+}
