@@ -16,7 +16,15 @@ body > * {
 
 header {
   grid-area: 1 / 2 / 2 / -1;
-  background-color: blue;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+header > h1 {
+  font-size: 8rem;
+  letter-spacing: 1rem;
+  line-height: 7rem;
 }
 
 .sidebar {
