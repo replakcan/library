@@ -10,6 +10,11 @@ body {
   grid-template-rows: repeat(6, 1fr);
   min-height: 100vh;
 }
+
+button {
+  cursor: pointer;
+}
+
 body > * {
   padding: 1rem;
 }
@@ -75,6 +80,21 @@ dialog {
   transform: translateX(-50%) translateY(-50%);
 }
 
+dialog > button {
+  top: 1.5rem;
+  right: 0.7rem;
+  padding: 0 0.5rem;
+  color: darkkhaki;
+  background-color: darkred;
+  position: absolute;
+}
+
+dialog > button:hover {
+  transition-duration: 1000ms;
+  background-color: darkkhaki;
+  color: darkred;
+}
+
 ::backdrop {
   background-image: linear-gradient(45deg, magenta, rebeccapurple, dodgerblue, green);
   opacity: 0.75;
@@ -93,6 +113,15 @@ fieldset > div > * {
 fieldset button {
   margin: auto;
   padding: 0.4rem 1.2rem;
+  color: darkkhaki;
+  background-color: darkred;
+  font-weight: bold;
+}
+
+fieldset > button:hover {
+  transition-duration: 1000ms;
+  background-color: darkkhaki;
+  color: darkred;
 }
 
 input:valid {
