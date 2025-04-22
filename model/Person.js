@@ -1,21 +1,22 @@
-const Person = function (name, age, location) {
-  if (!new.target) throw Error('You must use the new word')
+class Person {
+  constructor(name, age, location) {
+    this.id = crypto.randomUUID()
+    this.name = name
+    this.age = age
+    this.location = location
+  }
 
-  this.id = crypto.randomUUID()
-  this.name = name
-  this.age = age
-  this.location = location
-}
+  toString() {
+    return `Person info:\person_id: ${this.id}\nname: ${this.name}\nage: ${this.age}\nlocation: ${this.location}\n`
+  }
 
-Person.prototype.toString = function () {
-  return `Person info:\person_id: ${this.id}\nname: ${this.name}\nage: ${this.age}\nlocation: ${this.location}\n`
-}
+  static createPersonAndAddToTheList(name, age, location, list) {
+    const person = new Person(name, age, location)
 
-export const createPersonAndAddToTheList = function (name, age, location, list) {
-  const person = new Person(name, age, location)
-  list.push(person)
+    list.push(person)
 
-  return person
+    return person
+  }
 }
 
 export default Person
