@@ -1,7 +1,21 @@
-let theList = []
+class TheList {
+  constructor(list = []) {
+    this._list = list
+  }
 
-const setTheList = function (newLibrary) {
-  theList = theList.filter((person) => newLibrary.includes(person))
+  get list() {
+    return this._list
+  }
+
+  set list(newList) {
+    this._list = newList
+  }
+
+  filterTheList(newLibrary) {
+    this._list = this._list.filter((person) => newLibrary.includes(person))
+  }
 }
 
-export { theList, setTheList }
+const theList = new TheList()
+
+export default theList
