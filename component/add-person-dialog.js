@@ -1,8 +1,8 @@
 import createPersonCard from './person-card.js'
-import { createPersonAndAddToTheList } from '../model/Person.js'
 import createFieldset from './form-fieldset.js'
 import { formFields } from '../data/form-fields.js'
-import { theList } from '../model/TheList.js'
+import theList from '../model/TheList.js'
+import Person from '../model/Person.js'
 
 const main = document.querySelector('main')
 
@@ -23,7 +23,7 @@ form.addEventListener('submit', (e) => {
   const age = document.querySelector('#age').value
   const location = document.querySelector('#location').value
 
-  const person = createPersonAndAddToTheList(name, age, location, theList)
+  const person = Person.createPersonAndAddToTheList(name, age, location, theList.list)
   const personCard = createPersonCard(person)
 
   main.appendChild(personCard)

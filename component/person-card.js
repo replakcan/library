@@ -1,4 +1,4 @@
-import { theList, setTheList } from '../model/TheList.js'
+import theList from "../model/TheList.js"
 
 const createPersonCard = function (person) {
   const { id, name, age, location } = person
@@ -22,8 +22,9 @@ const createPersonCard = function (person) {
   removePersonButton.classList.add('remove-person-button')
 
   removePersonButton.addEventListener('click', () => {
-    const filteredList = theList.filter((person) => person.id.slice(0, 5) != personCardId)
-    setTheList(filteredList)
+    const filteredList = theList.list.filter((person) => person.id.slice(0, 5) != personCardId)
+    
+    theList.filterTheList(filteredList)
 
     const personCardToDelete = document.querySelector(`[data-id="${personCardId}"]`)
 
